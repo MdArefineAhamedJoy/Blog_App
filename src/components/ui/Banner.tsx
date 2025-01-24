@@ -60,37 +60,37 @@ const Banner: React.FC = () => {
 
   return (
     <div>
-      <SeconderNavbar/>
+      <SeconderNavbar />
       <div className="w-full h-screen border border-blue-950">
-      <Splide options={splideOptions}>
-        {bannerData.map((slide, index) => (
-          <SplideSlide key={index}>
-            <div className="relative h-full w-full overflow-hidden">
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="h-full w-full object-cover"
-                onError={handleImageError}
-              />
-              <div className="absolute inset-0  px-4 bg-black bg-opacity-70 border border-red-500 w-10/12 mx-auto h-[380px] top-1/2 transform -translate-y-1/2 rounded-md">
-                <h2 className="text-white  text-3xl md:text-4xl font-bold mb-4">
-                  {slide.title}
-                </h2>
-                <p className="text-white  text-lg md:text-xl mb-8">
-                  {slide.description}
-                </p>
-                <button
-                  onClick={() => handleReadMore(slide.link)}
-                  className="bg-blue-500 hover:bg-blue-600 text-white font-medium  py-3 px-6 rounded-md transition-colors"
-                >
-                  Read More
-                </button>
+        <Splide options={splideOptions}>
+          {bannerData.map((slide, index) => (
+            <SplideSlide key={index}>
+              <div className="relative h-full w-full overflow-hidden">
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="h-full w-full object-cover"
+                  onError={handleImageError}
+                />
+                <div className="absolute inset-0  px-4 bg-black bg-opacity-70 border border-red-500 w-10/12 mx-auto h-[380px] top-1/2 transform -translate-y-1/2 rounded-md">
+                  <h2 className="text-white   md:text-4xl  mb-4 font-bold italic text-[40px] leading-[59px]">
+                    {slide.title}
+                  </h2>
+                  <p className="text-white  text-lg md:text-xl mb-8">
+                    {slide.description}
+                  </p>
+                  <button
+                    onClick={() => handleReadMore(slide.link)}
+                    className="bg-blue-500 hover:bg-blue-600 text-white font-medium  py-3 px-6 rounded-md transition-colors"
+                  >
+                    Read More
+                  </button>
+                </div>
               </div>
-            </div>
-          </SplideSlide>
-        ))}
-      </Splide>
-    </div>
+            </SplideSlide>
+          ))}
+        </Splide>
+      </div>
     </div>
   );
 };

@@ -1,8 +1,6 @@
-import Card from "./Card";
-
 const TradingBanner = () => {
   return (
-    <div>
+    <div className="mb-16">
       <section>
         <h1>The Trending Stories Latest </h1>
       </section>
@@ -35,19 +33,6 @@ const TradingBanner = () => {
           </a>
         </div>
       </div>
-      <section className="grid grid-cols-3 gap-5">
-        <Card />
-        <Card />
-        <Card />
-      </section>
-      <section className="grid grid-cols-2 gap-5 ">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </section>
     </div>
   );
 };
