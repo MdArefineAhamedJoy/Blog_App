@@ -1,8 +1,20 @@
 const TradingBanner = () => {
   return (
     <div className="mb-16">
-      <section>
-        <h1>The Trending Stories Latest </h1>
+      <section className="mb-10">
+        <div className="flex items-center  border-gray-300 mb-4">
+          <div
+            className="bg-black text-white   px-4 py-2 font-bold italic text-sm uppercase"
+            style={{
+              clipPath: "polygon(0 0, 100% 0, 95% 100%, 0% 100%)",
+            }}
+          >
+            The Trending Stories Latest
+          </div>
+          <div className="relative h-10 flex-grow ml-10 flex items-end">
+            <div className="border-t border-black w-full"></div>
+          </div>
+        </div>
       </section>
       <div className="flex gap-8 mr-11">
         <div>
@@ -15,20 +27,23 @@ const TradingBanner = () => {
           </div>
         </div>
         <div>
-          <p className=" font-light italic text-[27px] leading-[47px]">
+          <p className="pb-6 font-light italic text-[27px] leading-[47px]">
             Start Here
           </p>
-          <h1 className="font-extrabold italic text-[31px] leading-[47px] tracking-[0.07em]">
+          <h1 className="pb-4 font-extrabold italic text-[31px] leading-[47px] tracking-[0.07em]">
             Lorem Ipsum is simply dummy text of the printing{" "}
           </h1>
-          <p className="font-semibold text-[19px] leading-[47px] text-black">
+          <p className="pb-2 font-semibold text-[19px] leading-[47px] text-black">
             John Leri
           </p>
-          <p className="font-[275] text-[25px] leading-[47px] tracking-[0.07em]">
+          <p className="pb-6 font-[275] text-[25px] leading-[47px] tracking-[0.07em]">
             when an unknown printer took a galley of type and scrambled it to
             make a type specimen book.
           </p>
-          <a className="font-normal text-[25px] leading-[47px]" href="8">
+          <a
+            className="font-normal text-[25px] leading-[47px] underline"
+            href="8"
+          >
             See All
           </a>
         </div>
