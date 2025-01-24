@@ -86,7 +86,7 @@ const Subscription = () => {
             <div className="mt-4">
               <button
                 type="submit"
-                className=" px-10 border border-white font-semibold py-2  rounded hover:bg-gray-100 transition-colors"
+                className=" px-10 border border-white font-semibold py-2  rounded  transition-colors"
               >
                 Sign Up
               </button>

@@ -1,4 +1,4 @@
-const TradingBanner = () => {
+const TrendingBanner = () => {
   return (
     <div className="mb-16">
       <section className="mb-10">
@@ -52,4 +52,4 @@ const TradingBanner = () => {
   );
 };
 
-export default TradingBanner;
+export default TrendingBanner;

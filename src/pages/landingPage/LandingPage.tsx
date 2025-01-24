@@ -1,16 +1,16 @@
 import Banner from "@/components/ui/Banner";
 import LatestNews from "@/components/ui/latestNews/LatestNews";
-import Subscription from "@/components/ui/subscrption/Subscrption";
-import TrandingContainer from "@/components/ui/trandingNews/TrandingContainer";
+import Subscription from "@/components/ui/subscription/Subscription";
+import TrendingContainer from "@/components/ui/trendingNews/TrendingContainer";
 
 const LandingPage = () => {
   return (
-    <div>
+    <>
       <Banner />
       <LatestNews />
-      <TrandingContainer />
+      <TrendingContainer />
       <Subscription />
-    </div>
+    </>
   );
 };
 

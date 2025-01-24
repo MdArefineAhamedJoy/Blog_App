@@ -1,13 +1,7 @@
-interface TTrandingProps {
-  data: {
-    image: string;
-    title: string;
-    description: string;
-    link: string;
-  };
-}
+import { TCardProps } from "@/types/card.type";
 
-const Card = ({ data }: TTrandingProps) => {
+
+const Card = ({ data }: {data : TCardProps}) => {
   return (
     <div className="border border-gray-300 shadow-lg rounded-lg overflow-hidden">
       <div className="h-[280px]">

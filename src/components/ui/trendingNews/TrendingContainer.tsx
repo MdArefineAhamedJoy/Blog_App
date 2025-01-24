@@ -1,8 +1,8 @@
 import Card from "./Card";
-import TradingBanner from "./TradingBanner";
-import TrandingCard from "./TrandingCard";
+import TrendingBanner from "./TrendingBanner";
+import TrendingCard from "./TrendingCard";
 
-const trandingData = [
+const trendingContainer = [
   {
     image:
       "https://s3-alpha-sig.figma.com/img/8a05/86cc/fd0171327ed95a4546d0270d8107689b?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nK44P7XWBqaF-RgwsdLQuFrkOy7HbPqeOAA5YUkBd5~noR5nZpXkJqw5qKLgiVAfrx64N8~4UzQAbNoCxFo6B~eFZXox9RpwpZjdaN3tbpjiOpS5UXhS21XJBCGlBo6at3ypzFdlQRIQVhSbJ51nfzWawBzT22YnQRVLyyynjjYsEsjtr7BtbHx8~5NJGkd14Pa90yZEt2bEkmnbWwbM8BxIzMcc-XpNoOQOkiFIN0nTRbQqWafbYOd1ZOBRcA605BjnwqChj9opPd6kDJkkwFSm6Wxd2NLuTJCy6khCukLH3-SbiLvYPF5hx~PtDIRxT0bDy7amP-dwDO0kgLpHiQ__",
@@ -79,22 +79,22 @@ const cardData = [
   },
 ];
 
-const TrandingContainer = () => {
+const TrendingContainer = () => {
   return (
     <div>
-      <TradingBanner />
+      <TrendingBanner />
       <section className="grid grid-cols-3 gap-5 mb-16">
         {cardData.map((data) => (
           <Card data={data} />
         ))}
       </section>
       <section className="grid grid-cols-2 gap-5 mb-16">
-        {trandingData.map((data) => (
-          <TrandingCard data={data} />
+        {trendingContainer.map((data, index) => (
+          <TrendingCard key={index++} data={data} />
         ))}
       </section>
     </div>
   );
 };
 
-export default TrandingContainer;
+export default TrendingContainer;
