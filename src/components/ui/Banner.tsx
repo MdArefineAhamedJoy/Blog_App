@@ -2,6 +2,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Options } from "@splidejs/splide";
 import { useNavigate } from "react-router-dom";
+import SeconderNavbar from "./SeconderNavbar";
 
 interface BannerSlide {
   image: string;
@@ -58,7 +59,9 @@ const Banner: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen border border-blue-950">
+    <div>
+      <SeconderNavbar/>
+      <div className="w-full h-screen border border-blue-950">
       <Splide options={splideOptions}>
         {bannerData.map((slide, index) => (
           <SplideSlide key={index}>
@@ -69,16 +72,16 @@ const Banner: React.FC = () => {
                 className="h-full w-full object-cover"
                 onError={handleImageError}
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 bg-black bg-opacity-70 border border-red-500 w-10/12 mx-auto h-[380px] top-1/2 transform -translate-y-1/2 rounded-md">
-                <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
+              <div className="absolute inset-0  px-4 bg-black bg-opacity-70 border border-red-500 w-10/12 mx-auto h-[380px] top-1/2 transform -translate-y-1/2 rounded-md">
+                <h2 className="text-white  text-3xl md:text-4xl font-bold mb-4">
                   {slide.title}
                 </h2>
-                <p className="text-white text-lg md:text-xl mb-8">
+                <p className="text-white  text-lg md:text-xl mb-8">
                   {slide.description}
                 </p>
                 <button
                   onClick={() => handleReadMore(slide.link)}
-                  className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-md transition-colors"
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-medium  py-3 px-6 rounded-md transition-colors"
                 >
                   Read More
                 </button>
@@ -87,6 +90,7 @@ const Banner: React.FC = () => {
           </SplideSlide>
         ))}
       </Splide>
+    </div>
     </div>
   );
 };

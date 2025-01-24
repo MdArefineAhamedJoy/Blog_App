@@ -1,17 +1,35 @@
+import { FaFacebook, FaLinkedin, FaTwitter, FaVideo } from "react-icons/fa";
+
 const SeconderNavbar = () => {
   return (
-    <div className="flex  items-center justify-between">
-      <div className="flex justify-center items-center">
-        <img src="" alt="Bearal and Busnasie Logo" className="w-16 h-16" />
+    <div className="flex  items-center justify-between bg-black text-white">
+      <div className="">
+        <h1>Today's Pick</h1>
       </div>
-      <div>
-        <ul className="flex justify-between space-x-10">
-          <li>Product Reviews </li>
-          <li>Retail Operations</li>
-          <li>Supplier and Distributor Relations </li>
-          <li>Acquisitions </li>
-          <li>Technology and Innovation</li>
-        </ul>
+      <div className="flex items-center ">
+        <div>
+          <input
+            className="block"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search "
+          />
+        </div>
+        <div className="flex space-x-4">
+          <a href="#" className=" ">
+            <FaFacebook size={20} />
+          </a>
+          <a href="#" className=" ">
+            <FaTwitter size={20} />
+          </a>
+          <a href="#" className=" ">
+            <FaLinkedin size={20} />
+          </a>
+          <a href="#" className=" ">
+            <FaVideo size={20} />
+          </a>
+        </div>
       </div>
     </div>
   );
