@@ -2,7 +2,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Options } from "@splidejs/splide";
 import { useNavigate } from "react-router-dom";
-import SeconderNavbar from "./SeconderNavbar";
 
 interface BannerSlide {
   image: string;
@@ -53,7 +52,7 @@ const Banner: React.FC = () => {
 
   return (
     <div className="mb-16">
-      <SeconderNavbar />
+      {/* <SeconderNavbar /> */}
       <div className="w-full h-screen ">
         <Splide options={splideOptions}>
           {bannerData.map((slide, index) => (
@@ -65,8 +64,11 @@ const Banner: React.FC = () => {
                   className="h-full w-full object-cover"
                   onError={handleImageError}
                 />
-                <div className="absolute inset-0 p-14 bg-black bg-opacity-70  w-10/12 mx-auto h-[70vh] top-1/2 transform -translate-y-1/2 rounded-md">
-                  <h2 className="text-white text-5xl mb-10 italic  leading-[59px] ">
+                <div className="absolute inset-0 p-4 md:p-10 lg:p-14 bg-black bg-opacity-70  w-10/12 mx-auto h-[70vh] top-1/2 transform -translate-y-1/2 rounded-md">
+                  <h2
+                    className="text-white text-lg lg:text-[3rem] lg:mb-[2.5rem] mb-[1.5rem] md:mb-[1.5rem] italic 
+                  leading-[1.7rem] md:leading-[3rem] lg:leading-[3.6875rem] "
+                  >
                     Turn Your
                     <span className="font-extrabold"> Post-Holiday </span>
                     Leftovers into

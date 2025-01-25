@@ -83,12 +83,12 @@ const TrendingContainer = () => {
   return (
     <div className="px-4">
       <TrendingBanner />
-      <section className="grid grid-cols-3 gap-5 mb-16">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
         {cardData.map((data) => (
           <Card data={data} />
         ))}
       </section>
-      <section className="grid grid-cols-2 gap-5 mb-16">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
         {trendingContainer.map((data, index) => (
           <TrendingCard key={index++} data={data} />
         ))}

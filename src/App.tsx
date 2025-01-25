@@ -7,9 +7,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <div>
-        <NavigationBar />
+        {/* <NavigationBar /> */}
         <LandingPage />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </BrowserRouter>
   );

@@ -71,49 +71,45 @@ const latestNewses = [
 const LatestNews = () => {
   return (
     <div className="mx-auto p-4 mb-16">
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid lg:grid-cols-4 gap-6">
         <section className="col-span-3">
-          <section className="">
-            <div className="flex items-center  border-gray-300 mb-4">
-              <div
-                className="bg-black text-white   px-4 py-2 font-bold italic text-sm uppercase"
-                style={{
-                  clipPath: "polygon(0 0, 100% 0, 95% 100%, 0% 100%)",
-                }}
-              >
-                The Trending Stories Latest
-              </div>
-              <div className="relative h-10 flex-grow ml-10 flex items-end">
-                <div className="border-t border-black w-full"></div>
-              </div>
+          <div className="flex items-center  border-gray-300 mb-4">
+            <div
+              className="bg-black text-white   px-4 py-2 font-bold italic text-sm uppercase"
+              style={{
+                clipPath: "polygon(0 0, 100% 0, 95% 100%, 0% 100%)",
+              }}
+            >
+              The Trending Stories Latest
             </div>
-          </section>
-          <div className="grid grid-cols-3 gap-y-5">
+            <div className="relative h-10 flex-grow ml-10 flex items-end">
+              <div className="border-t border-black w-full"></div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-y-5">
             {latestNewses.map((data, index) => (
               <NewsCard
                 key={index}
                 data={data}
-                isLastInRow={(index + 1) % 3 === 0} 
+                isLastInRow={(index + 1) % 3 === 0}
               />
             ))}
           </div>
         </section>
-        <section className="col-span-1">
-          <section className="">
-            <section className="">
-              <div className="flex mb-3">
-                <div className=" font-bold italic text-xl leading-[43.88px]   uppercase">
-                  The Stories
-                </div>
-                <div className="relative h-10 flex-grow ml-5 flex items-end">
-                  <div className="border-t border-black w-full"></div>
-                </div>
-              </div>
-            </section>
-          </section>
-          {storeData.map((data, index) => (
-            <StoriesCard key={index++} data={data} />
-          ))}
+        <section className="lg:col-span-1  col-span-4">
+          <div className="flex mb-3">
+            <div className=" font-bold italic text-xl leading-[43.88px]   uppercase">
+              The Stories
+            </div>
+            <div className="relative h-10 flex-grow ml-5 flex items-end">
+              <div className="border-t border-black w-full"></div>
+            </div>
+          </div>
+          <div className="md:flex flex-col lg:flex-col gap-6">
+            {storeData.map((data, index) => (
+              <StoriesCard key={index++} data={data} />
+            ))}
+          </div>
         </section>
       </div>
     </div>
