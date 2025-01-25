@@ -8,7 +8,8 @@ const NewsCard = ({
   isLastInRow: boolean;
 }) => {
   return (
-    <div className={`${isLastInRow ? "" : "border-r border-gray-500"}`}>
+    <div className={`${isLastInRow ? "" : "lg:border-r lg:border-gray-500"}`
+}>
       <div className="h-[240px] pb-6 border-b border-gray-500">
         <img
           className="w-full h-full rounded px-6"

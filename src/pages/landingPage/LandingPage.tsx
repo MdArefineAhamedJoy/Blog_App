@@ -6,9 +6,9 @@ import TrendingContainer from "@/components/ui/trendingNews/TrendingContainer";
 const LandingPage = () => {
   return (
     <>
-      {/* <Banner />
+      <Banner />
       <LatestNews />
-      <TrendingContainer /> */}
+      <TrendingContainer />
       <Subscription />
     </>
   );
