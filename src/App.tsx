@@ -5,13 +5,15 @@ import LandingPage from "./pages/landingPage/LandingPage";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div>
-        <NavigationBar />
-        <LandingPage />
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div  className="2xl:mx-auto xl:mx-auto max-w-7xl">
+      <BrowserRouter>
+        <div>
+          <NavigationBar />
+          <LandingPage />
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </div>
   );
 };
 
