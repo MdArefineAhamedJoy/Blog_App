@@ -1,9 +1,9 @@
 import { Search } from "lucide-react";
-import { FaFacebook, FaLinkedin, FaTwitter, FaVideo } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const SeconderNavbar = () => {
   return (
-    <div className="flex  items-center justify-between bg-black text-white py-1">
+    <div className="px-4 flex  items-center justify-between bg-black text-white py-1">
       <div className="">
         <h1 className="font-semibold italic text-[36px] leading-[43.88px]">
           Today's Pick
@@ -32,9 +32,6 @@ const SeconderNavbar = () => {
           </a>
           <a href="#" className=" ">
             <FaLinkedin size={20} />
-          </a>
-          <a href="#" className=" ">
-            <FaVideo size={20} />
           </a>
         </div>
       </div>

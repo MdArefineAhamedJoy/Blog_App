@@ -1,12 +1,12 @@
 const Subscription = () => {
   return (
     <div className="bg-black text-white min-h-screen">
-      <div className="container mx-auto grid md:grid-cols-2 gap-8  px-4 py-16 max-w-6xl">
-        <section className="w-full">
+      <div className=" grid md:grid-cols-2 space-x-16  px-4 py-16 max-w-6xl">
+        <section className=" h-[550px] w-[575px]">
           <img
             src="https://s3-alpha-sig.figma.com/img/07db/d9bc/e393afd1ba7cc55d6bf07751fa88b430?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h5OPr68kq2VvZAkHh9e-GBhHzjsliP1ojxZ6CJkoLNIjohVHO1Db60PIC7CqDkRLfcqEidqR3CeNH3pIQl952t9uTIygRPgeiDc~04FuUF6CF2oZrXeHLU19OnztxFDxCiDPGbcYKLPWiHqOsVs2VEW7A0ZqM1OOrrPM7YbPIN9xXHWYYGmqGSfz77iYDyoebeZcC8b6hLigbcUTjTd5rJU41jJtDgZ74EmX3xgBd8wyu3nos3-tFb1OhWvxjV1FkSJy81xafkv7VcOe8nvnxZfZlhmx4EwnWwPLP-ngECNzoerKEwGbpxnbKRcLKCNLJrCoaX88rcBWT-tcQqiFjg__"
             alt="Newsletter preview"
-            className="w-full h-[550px] rounded-lg shadow-lg"
+            className="w-full h-full  rounded-lg shadow-lg"
           />
         </section>
 

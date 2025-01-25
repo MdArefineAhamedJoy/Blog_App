@@ -2,7 +2,7 @@ import logoImage from '../../assets/image-removebg-preview1.png';
 
 const NavigationBar = () => {
   return (
-    <div className="flex  items-center justify-between">
+    <div className="px-4 flex  items-center justify-between">
       <div className="flex justify-center items-center">
         <img src={logoImage} alt="Bearal and Busnasie Logo" className="w-16 h-16" />
       </div>

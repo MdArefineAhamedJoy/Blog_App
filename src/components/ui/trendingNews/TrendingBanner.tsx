@@ -27,16 +27,16 @@ const TrendingBanner = () => {
           </div>
         </div>
         <div>
-          <p className="pb-6 font-light italic text-[27px] leading-[47px]">
+          <p className=" font-light italic text-[27px] leading-[47px]">
             Start Here
           </p>
-          <h1 className="pb-4 font-extrabold italic text-[31px] leading-[47px] tracking-[0.07em]">
+          <h1 className="pb-2 font-extrabold italic text-[31px] leading-[47px] tracking-[0.05em]">
             Lorem Ipsum is simply dummy text of the printing{" "}
           </h1>
           <p className="pb-2 font-semibold text-[19px] leading-[47px] text-black">
             John Leri
           </p>
-          <p className="pb-6 font-[275] text-[25px] leading-[47px] tracking-[0.07em]">
+          <p className="pb-6 font-[275] text-[25px] leading-[47px] tracking-[0.06em]">
             when an unknown printer took a galley of type and scrambled it to
             make a type specimen book.
           </p>

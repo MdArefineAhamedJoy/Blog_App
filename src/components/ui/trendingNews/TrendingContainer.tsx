@@ -81,7 +81,7 @@ const cardData = [
 
 const TrendingContainer = () => {
   return (
-    <div>
+    <div className="px-4">
       <TrendingBanner />
       <section className="grid grid-cols-3 gap-5 mb-16">
         {cardData.map((data) => (
